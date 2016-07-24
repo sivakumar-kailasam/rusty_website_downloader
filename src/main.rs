@@ -24,7 +24,7 @@ fn main() {
         }
     });
 
-    if output_dir.exists() == false {
+    if !output_dir.exists() {
         match fs::create_dir_all(output_dir) {
             Err(why) => error!("Couldn't create output directory {:?}", why.kind()),
             Ok(_) => warn!("{} doesn't exist so creating it", output_dir.display()),
