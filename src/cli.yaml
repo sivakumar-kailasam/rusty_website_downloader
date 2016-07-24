@@ -4,8 +4,7 @@ author: Sivakumar Kailasam
 about: Download an entire website for offline viewing. Downloads only files from the domain of given url.
 args:
     - url:
-        short: u
-        long: url
         help: Base url from which crawler will start scanning
+        required: true
     - outputDir:
         help: The folder to which the site content will be downloaded
