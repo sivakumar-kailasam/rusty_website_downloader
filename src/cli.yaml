@@ -1,0 +1,11 @@
+name: Rusty Website Downloader
+version: 0.1.0
+author: Sivakumar Kailasam
+about: Download an entire website for offline viewing. Downloads only files from the domain of given url.
+args:
+    - url:
+        short: u
+        long: url
+        help: Base url from which crawler will start scanning
+    - outputDir:
+        help: The folder to which the site content will be downloaded
